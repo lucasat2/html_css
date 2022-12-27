@@ -1,0 +1,40 @@
+body { 
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+
+h1 { 
+    margin-top: 200px;
+}
+
+.container { 
+
+    
+    background: gray;
+    width: auto;
+    height:auto;
+    display: block;
+    margin: auto;
+    margin-right:400px;
+    margin-left: 400px;
+ 
+}
+
+.container img { 
+    display: block;
+    width: 500px;
+    align-self: center;
+    margin-left: 150px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+figcaption { 
+    font-size: 40px;
+    text-align: center;
+}
