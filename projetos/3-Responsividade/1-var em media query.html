@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        :root { 
+            --bg-color: #FFF;
+            --bg-second: #ccc;
+            --font-size: 25px;
+     
+        }
+
+        body{
+            background-color: var(--bg-color);
+            font-size: var(--font-size);
+        }
+
+        h1{
+            color: var(--font-color, #0000FF);
+
+        }
+
+        .container { 
+            background-color: var(--bg-second);
+            color: var(--font-color);
+        }
+
+     /* Quando a resolução da janela chegar a menos de 450 px, os font
+     size da página serão reduzidos para 15px;*/
+
+        @media(max-width: 450px) { 
+            :root{
+                --font-size: 15px;
+            }
+            
+        }
+    </style>
+    
+    <h1>Titulo do Site </h1>
+
+    <div class="container">
+        algum texto qualquer 
+    </div>
+</body>
+</html>

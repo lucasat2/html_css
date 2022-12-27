@@ -1,0 +1,57 @@
+
+<!-- Aprendido nesta aula : 
+flex-wrap : wrap - quebra de linha
+flex-flow quebra de linha e alinhamento na mesma propriedade, que por padrão não vem na propriedade flex, a qual os elementos se expremem na tela. 
+Justify content: Alinha o elemento na direção que está sendo exibido, pode ser flex-start, flex-end, center , space-around, space-between(o primeiro e ultimo elementos ficam colados)
+align-itens: Alinha os elementos na direção contrária, pode ser flex-start, flex-end, center.
+flex-start: os elementos comecarão no inicio da página
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos</title>
+</head>
+<body>
+
+
+<style>
+
+    .container {
+        flex-direction: row;
+        display: flex;
+        height: 500px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: dimgray;
+      
+        
+    }
+
+    .container div {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        background-color: red ;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+</style>
+
+
+<div class="container">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+
+
+
+</div>
+
+</body>
+</html>

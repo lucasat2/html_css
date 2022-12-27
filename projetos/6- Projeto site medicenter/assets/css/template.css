@@ -1,0 +1,559 @@
+/**/
+
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Divs com classe container */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /*Para deixar os elementos dentro da div um em cada canto separados no header, ( a div 1 e a 2) */
+    width: 990px;
+
+
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/* BARRA DE NAVEGAÇÃO (HEADER) */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+
+}
+
+nav ul,
+li {
+    list-style: none;
+    /*Retirar os pontos da lista*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Links do menu*/
+nav a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #727272;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+/*Passar o mouse nos links do menu para ficarem azuis */
+
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    /*Alinhar a logo no centro */
+
+}
+
+.logo img {
+    width: 250px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/* AREA DO BANNER COM A FOTO DA MULHER */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    /*A imagem se expande para preencher o espaço do banner dependendo do tamanho da tela */
+    height: 670px;
+}
+
+/*DIV COLUNA DENTRO DO BANNER COM OS TEXTOS */
+
+.column {
+    flex-direction: column;
+}
+
+/* Titulo principal do banner TOP NOTCH EXPERIENCE */
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Titulo principal do banner TOP NOTCH EXPERIENCE */
+.banner_headline h1 {
+    font-size: 70px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+    text-shadow: 0px 1px 0px #555555;
+
+
+}
+
+.banner_headline h2 {
+    font-size: 25px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 1px 0px #555555;
+    max-width: 350px;
+    margin-top: 30px;
+
+}
+
+/* 3 caixas coloridas no pescoco da mulher */
+.banner_options {
+    height: 210px;
+    display: flex;
+
+}
+
+/* 3 caixas coloridas no pescoco da mulher */
+.opcao1,
+.opcao2,
+.opcao3 {
+    flex: 1;
+    color: white;
+
+}
+
+.opcao1 {
+    background-color: #39aae1;
+    padding: 20px;
+}
+
+.opcao2 {
+    background-color: #0079c7;
+    padding: 20px;
+}
+
+.opcao3 {
+    background-color: #2b4c99;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 21px;
+}
+
+.descricao {
+    margin: 20px 0px 20px 0px;
+    font-size: 15px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+.opening_hours {
+    border-bottom: 1px solid rgba(236, 230, 230, 0.248);
+    margin: 20px 0px 20px 0px;
+    font-size: 15px;
+}
+
+.horario {
+    padding-left: 100px;
+    display: inline;
+}
+
+.horario2 {
+    padding-left: 140px;
+    display: inline;
+}
+
+.horario3 {
+    padding-left: 150px;
+    display: inline;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION PRINCIPAL ABAIXO DO BANNER DA MULHER COM AS NOTICIAS */
+
+#geral {
+    display: flex;
+    justify-content: center;
+
+}
+
+#geral section {
+    flex: 2;
+}
+
+
+#geral aside {
+    flex: 1;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.textotitulo {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+
+}
+
+/* barra azul debaixo de departments */
+.barraazul {
+    width: auto;
+    height: 3px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+/* BLOCOS AZUIS A DIREITA  */
+
+.block_blue {
+
+    display: flex;
+    width: auto;
+    height: 510px;
+}
+
+.bloco1 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+.bloco2 {
+    
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.bloco1 .grid_block_aside {
+
+    background-color: #39aae1;
+    height: 150px;
+    width: 150px;
+}
+
+.bloco2 .grid_block_aside {
+    background-color: #39aae1;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* AREA DE NOTICIAS  */
+
+.flex { 
+ 
+    display: flex;
+    flex-wrap: wrap; /*quebra de linha*/
+}
+
+
+/* Dizer que todas as imagens do doutor serao do mesmo tamanho */
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+} 
+
+article a { 
+    text-decoration: none;
+}
+article .data {
+    display: flex;
+    /*para ficar um ao lado do outro*/
+}
+
+article .postadoem {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin: 2px;
+}
+
+
+article .comentarios {
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+/* Foto do doutor examinando menino */
+
+article .thumbnailnoticia { 
+    width: 100% ;
+    margin-top: 30px;
+    height: auto;
+
+}
+
+article .titulo_noticia { 
+    margin: 25px 0px 25px 0px;
+    color: black;
+    font-size: 23px;
+}
+
+article .resumo{
+    font-size: 14px ;
+    color: #5c5c5c;
+    line-height: 20px; /*espacamento entre linhas*/
+}
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+.footer_menu{
+    display: flex;
+
+
+}
+
+.menu1,.menu2,.menu3 { 
+    flex: 1;
+    color: white;
+
+
+}
+
+
+.menu1 {
+    background-color: #39aae1;
+    
+}
+
+.menu2 {
+    background-color: #0079c7;
+    
+}
+
+.menu3 {
+    background-color: #2b4c99;
+    
+}
+
+.footer_menu a { 
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+
+.titulobloco { 
+    font-size: 24px;
+}
+
+
+footer .textotitulo { 
+    color: white;
+}
+
+.endereco_clinica { 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.endereco_clinica > p{ 
+    margin: 0px;
+    
+}
+
+
+.telefones_clinica { 
+    margin-top: 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+
+.telefones_clinica > p { 
+
+    margin: 0px;
+}
+
+.areadofooter{
+    display: flex;
+    
+}
+
+footer .areaitem{
+    flex: 1;
+    color: white;
+}
+
+.flexcolumn{
+    flex-direction: column;
+}
+
+
+.footer_copy { 
+   
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.menumobile { 
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
+
+
+.mm_line { 
+    height: 3px;
+    background-color: #39aae1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade para outros dispositivos */
+
+@media (max-width:600px)
+{
+
+.banner_headline { 
+        padding: 20px;
+    }
+
+.banner_headline h1 { 
+    font-size: 55px;
+}
+
+.banner_headline h2 { 
+    font-size: 17px;
+}
+
+.banner_options { 
+    height: auto;
+    flex-direction: column;
+}
+
+.container { 
+    flex-direction: column;
+}
+
+#geral section, #geral aside{
+    padding: 20px;
+}
+
+.footer_menu { 
+    flex-direction: column;
+}
+
+.areadofooter { 
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer_copy{
+    padding-left: 20px ;
+}
+
+header .container { 
+    flex-direction: row;
+}
+
+nav ul { 
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+header { 
+    height: auto;
+}
+
+.logo{
+    padding-left: 20px;
+}
+
+.menumobile { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+}
+
+

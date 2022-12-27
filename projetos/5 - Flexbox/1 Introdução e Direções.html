@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+
+    <style>
+        .container1{ 
+            background-color: rgb(199, 199, 199);
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+        }
+
+        .container2{ 
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+
+        }
+
+        .container1 div, .container2 div { 
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+        
+    </style>
+
+    
+    
+    <div class="container1">
+        <h1>container 1</h1>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+    <div class="container2">
+        <h1>container2</h1>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+
+</body>
+</html>

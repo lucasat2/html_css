@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/template.css">
+
+    <script type="text/javascript">
+
+        window.onload = function(){
+            document.querySelector(".menumobile").addEventListener("click",function(){
+                if(document.querySelector(".menu nav ul").style.display =='flex') { 
+                    document.querySelector(".menu nav ul").style.display ='none';
+                } else { 
+                    document.querySelector(".menu nav ul").style.display ='flex';
+                }
+            });
+        };
+
+    </script>
+
+
+    </head>
+    <body>
+        <!-- CABECALHO DO SITE  -->
+        <header>
+            <!-- Container dentro do header que armazenará duas outras divs  -->
+            <div class="container">
+                <!-- Logomarca -->
+                <div class="logo">
+                    <a href="">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- menu de navegacao -->
+                <div class="menu">
+                    <nav>
+                        <div class="menumobile">
+
+                                <div class="mm_line"></div>
+                                <div class="mm_line"></div>
+                                <div class="mm_line"></div>
+                              
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- BANNER DO SITE  -->
+        <section id="banner">
+            <!-- Conteudo que está dentro do banner -->
+            <div class="container column">
+                <!-- Recebe a classe de container e uma nova chamada column, para deixar a div em formato de coluna -->
+                <!-- Textos do Banner Top notch e medicenter -->
+                <div class="banner_headline">
+                    <h1>Top notch experience</h1>
+                    <h2>Medicenter is a perfect template for all screen sizes</h2>
+                </div>
+                <!-- Opcoes do banner -->
+                <div class="banner_options">
+                    <div class="opcao1">
+                        <div class="titulo">Emergency case</div>
+                        <div class="descricao">algum conteudo</div>
+                        <a href="">Read more</a>
+                    </div>
+                    <div class="opcao2">
+                        <div class="titulo">Doctors Timetable</div>
+                        <div class="descricao">algum conteudo</div>
+                        <a href="">Read more</a>
+                    </div>
+                    <div class="opcao3">
+                        <div class="titulo">Opening Hours</div>
+                        <div class="opening_hours">
+                            Monday-Friday
+                            <div class="horario">08:00-17:00</div>
+                        </div>
+                        <div class="opening_hours">
+                            Saturday
+                            <div class="horario2">09:30-17:30</div>
+                        </div>
+                        <div class="opening_hours">
+                            Sunday
+                            <div class="horario3">09:30-15:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================================================================= -->
+        <!--    AREA DE NOTICIAS -->
+        <section id="geral">
+            <div class="container">
+                <section>
+                    <div class="widget">
+                        <div class="titulo">
+                            <div class="textotitulo">Latest News</div>
+                            <div class="barraazul"></div>
+                        </div>
+                        <div class="corpowidget flex">
+                            <article>
+                                <a href="">
+                                    <!-- Data que noticia foi postada -->
+                                    <div class="data">
+                                        <div class="postadoem">12 dec 12</div>
+                                        <div class="comentarios">2</div>
+                                    </div>
+                                    <!-- Foto do doutor cuidando do menino -->
+                                    <div class="thumbnailnoticia">
+                                        <img src="assets/images/doutor.jpg" alt="doutor">
+                                    </div>
+                                    <!-- NOTICIA 1  -->
+                                    <div class="titulo_noticia">
+                                        Lorem ipsum, dolor sit amet consectetur.
+                                    </div>
+                                    <div class="resumo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt expedita quod, minus dolorem eius exercitationem et dolore vel sed at necessitatibus id voluptas possimus dolor adipisci doloremque praesentium
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, magni dolores ut eum laborum voluptatibus sit facilis totam ratione veniam iusto eligendi. Delectus voluptas pariatur adipisci praesentium, modi mollitia rerum. deserunt!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum excepturi obcaecati fuga nemo omnis adipisci architecto officiis voluptatibus, laboriosam modi odio doloribus amet, explicabo sapiente molestias repudiandae ad. Reprehenderit, odit!
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <!-- Data que noticia foi postada -->
+                                    <div class="data">
+                                        <div class="postadoem">12 dec 12</div>
+                                        <div class="comentarios">2</div>
+                                    </div>
+                                    <!-- Foto do doutor cuidando do menino -->
+                                    <div class="thumbnailnoticia">
+                                        <img src="assets/images/doutor.jpg" alt="doutor">
+                                    </div>
+                                    <!-- NOTICIA 2  -->
+                                    <div class="titulo_noticia">
+                                        Lorem ipsum, dolor sit amet consectetur.
+                                    </div>
+                                    <div class="resumo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt expedita quod, minus dolorem eius exercitationem et dolore vel sed at necessitatibus id voluptas possimus dolor adipisci doloremque praesentium
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, magni dolores ut eum laborum voluptatibus sit facilis totam ratione veniam iusto eligendi. Delectus voluptas pariatur adipisci praesentium, modi mollitia rerum. deserunt!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum excepturi obcaecati fuga nemo omnis adipisci architecto officiis voluptatibus, laboriosam modi odio doloribus amet, explicabo sapiente molestias repudiandae ad. Reprehenderit, odit!
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <!-- Data que noticia foi postada -->
+                                    <div class="data">
+                                        <div class="postadoem">12 dec 12</div>
+                                        <div class="comentarios">2</div>
+                                    </div>
+                                    <!-- Foto do doutor cuidando do menino -->
+                                    <div class="thumbnailnoticia">
+                                        <img src="assets/images/doutor.jpg" alt="doutor">
+                                    </div>
+                                    <!-- NOTICIA 3  -->
+                                    <div class="titulo_noticia">
+                                        Lorem ipsum, dolor sit amet consectetur.
+                                    </div>
+                                    <div class="resumo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt expedita quod, minus dolorem eius exercitationem et dolore vel sed at necessitatibus id voluptas possimus dolor adipisci doloremque praesentium
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, magni dolores ut eum laborum voluptatibus sit facilis totam ratione veniam iusto eligendi. Delectus voluptas pariatur adipisci praesentium, modi mollitia rerum. deserunt!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum excepturi obcaecati fuga nemo omnis adipisci architecto officiis voluptatibus, laboriosam modi odio doloribus amet, explicabo sapiente molestias repudiandae ad. Reprehenderit, odit!
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <!-- Data que noticia foi postada -->
+                                    <div class="data">
+                                        <div class="postadoem">12 dec 12</div>
+                                        <div class="comentarios">2</div>
+                                    </div>
+                                    <!-- Foto do doutor cuidando do menino -->
+                                    <div class="thumbnailnoticia">
+                                        <img src="assets/images/doutor.jpg" alt="doutor">
+                                    </div>
+                                    <!-- NOTICIA 4  -->
+                                    <div class="titulo_noticia">
+                                        Lorem ipsum, dolor sit amet consectetur.
+                                    </div>
+                                    <div class="resumo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt expedita quod, minus dolorem eius exercitationem et dolore vel sed at necessitatibus id voluptas possimus dolor adipisci doloremque praesentium
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, magni dolores ut eum laborum voluptatibus sit facilis totam ratione veniam iusto eligendi. Delectus voluptas pariatur adipisci praesentium, modi mollitia rerum. deserunt!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum excepturi obcaecati fuga nemo omnis adipisci architecto officiis voluptatibus, laboriosam modi odio doloribus amet, explicabo sapiente molestias repudiandae ad. Reprehenderit, odit!
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- CANTO DIREITO DA PAGINA -->
+                    <aside>
+                        <div class="widget">
+                            <div class="titulo">
+                                <div class="textotitulo">Departments</div>
+                                <div class="barraazul"></div>
+                            </div>
+                            <div class="corpowidget">
+                                ...
+                            </div>
+                            <!-- Retangulos -->
+                            <section class="block_blue">
+                                <div class="bloco1">
+                                    <div class="grid_block_aside"></div>
+                                    <div class="grid_block_aside"></div>
+                                    <div class="grid_block_aside"></div>
+                                </div>
+                                <div class="bloco2">
+                                    <div class="grid_block_aside"></div>
+                                    <div class="grid_block_aside"></div>
+                                    <div class="grid_block_aside"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="widget">
+                            <div class="titulo">
+                                <div class="textotitulo">Make an Appointment</div>
+                                <div class="barraazul"></div>
+                            </div>
+                            <div class="corpowidget">
+                                ...
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+
+            <!-- RODAPE DO SITE  -->
+            <footer>
+                <div class="container flexcolumn">
+                    <!-- Cubos coloridos um ao lado do outro no footer -->
+                    <div class="footer_menu">
+                        <div class="menu1">
+                            <a href="">
+                                <p class="titulobloco">Health Insurance</p>
+                                <p class="subtitulobloco">Here in medicenter we have individual</p>
+                            </a>
+                        </div>
+                        <div class="menu2">
+                            <a href="">
+                                <p class="titulobloco">Medical Records</p>
+                                <p class="subtitulobloco">Here in medicenter we have individual</p>
+                            </a>
+                        </div>
+                        <div class="menu3">
+                            <a href="">
+                                <p class="titulobloco">Online Bill Pay</p>
+                                <p class="subtitulobloco">Here in medicenter we have individual</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- area abaixo das caixas de opcao azuis com textos -->
+                    <div class="areadofooter">
+                        <div class="areaitem">
+                            <div class="widget">
+                                <div class="titulo">
+                                    <div class="textotitulo">Medicenter Clinic</div>
+                                    <div class="barraazul"></div>
+                                </div>
+                                <div class="corpowidget">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consequatur cupiditate ut harum fugit quos repellendus, obcaecati officia 
+                                    </p>
+                                    
+                                    
+                                    <div class="endereco_clinica">
+                                        <p>Medicenter Clinic</p>
+                                        <p>33 farfare street</p>
+                                        <p>Kellor East</p>
+                                        <p>VIC 3053 Australia</p>
+
+
+                                        
+                                    </div>
+
+
+                                    <div class="telefones_clinica">
+                                        <p>+123 655 655</p>
+                                        <p>+123 755 755</p>
+                                        <p>medicenter@mail.com</p>
+                                    </div>
+                                   
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="areaitem">
+                            <div class="widget">
+                                <div class="titulo">
+                                    <div class="textotitulo">Latest News</div>
+                                    <div class="barraazul"></div>
+                                </div>
+                                <div class="corpowidget">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="areaitem">
+                            <div class="widget">
+                                <div class="titulo">
+                                    <div class="textotitulo">Latest Tweets</div>
+                                    <div class="barraazul"></div>
+                                </div>
+                                <div class="corpowidget">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+
+                             <!-- DIREITOS RESERVADOS NO FINAL DA PAGINA  -->
+                            <div class="footer_copy">
+
+                                Copyright - Todos os direitos reservados
+
+                            </div>
+                        </div>
+                    </footer>
+                </body>
+            </html>

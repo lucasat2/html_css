@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        body{
+            display: flex;
+        }
+
+
+        div{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+
+/*   De acordo com o tamanho da proporcao de tela disponivel, se for mais para vertical ou mais para horizontal, o elemento se posiciona 
+     de acordo com as regras abaixo */
+
+        @media(orientation:landscape) { 
+            body{
+                flex-direction: row;
+            }
+        }
+
+        
+        @media(orientation:portrait) { 
+            body{
+                flex-direction: column;
+            }
+        }
+
+
+
+    </style>
+
+    <div>caixa1</div>
+    <div>caixa1</div>
+    <div>caixa1</div>
+    <div>caixa1</div>
+</body>
+</html>

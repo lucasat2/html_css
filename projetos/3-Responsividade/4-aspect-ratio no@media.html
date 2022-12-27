@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+/*   De acordo com a proporcao da tela , as propriedades abaixo serão aplicadas */
+
+        /* Quadrado perfeito as proporcoes precisam ser iguais ex: 600x600 */
+
+
+        @media(aspect-ratio:1/1) { 
+            body{
+               background-color: red;
+            }
+        }
+
+
+        @media(min-aspect-ratio:2/1) { 
+            body{
+               background-color: blue;
+            }
+        }
+
+
+        @media(max-aspect-ratio:1/2) { 
+            body{
+               background-color: green;
+            }
+        }
+        
+    </style>
+
+</body>
+</html>

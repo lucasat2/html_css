@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TITULO</h1>
+
+    <style>
+        body{ 
+            background-color: greenyellow;
+            font-size: 10px;
+      
+        }
+
+        h1{
+            color:white;
+     
+        }
+
+        /* A propriedade dos elementos será alterada quando atingir as regra abaixo, se nenhuma for atendida, pega o padrão greenyellow*/
+       
+        @media(min-width:1000px) {
+            
+            body{
+                background-color: blue;
+                font-size: 50px;
+            }
+        }
+
+        @media(min-width: 700px) and (max-width: 1000px) { 
+            body{
+                background-color: purple;
+                font-size: 30px;
+            }
+        }
+
+        @media(min-width: 300px) and (max-width: 700px) { 
+            body{
+                background-color: royalblue;
+                font-size: 20px;
+            }
+        }
+
+       
+
+      
+
+
+    </style>
+    
+</body>
+</html>

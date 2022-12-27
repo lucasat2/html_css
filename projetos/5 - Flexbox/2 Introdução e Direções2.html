@@ -1,0 +1,120 @@
+
+<!-- 
+Aqui aprenderemos a propriedade flex: 1, que faz a distribuicao igualitaria entre os elementos. Podemos atribuir 
+valores 1, 2, 3, 4, que significa o quanto o elemento irá ocupar na tela.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+
+    <style>
+
+        .container{ 
+            background-color: rgb(199, 199, 199);
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+        }
+
+
+        .div1 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div2 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div3 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div4 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+
+        .div5 { 
+            flex:2;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div6 { 
+            flex:2;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div7 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div8 { 
+            flex:1;
+            background-color: red;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+    </style>
+    
+    <h1>Distribuição igualitaria</h1>
+
+    <div class="container">
+     
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+
+    <h1>Distribuição Diversificada</h1>
+
+    <div class="container">
+     
+        <div class="div5">1</div>
+        <div class="div6">2</div>
+        <div class="div7">3</div>
+        <div class="div8">4</div>
+    </div>
+
+
+
+</body>
+</html>

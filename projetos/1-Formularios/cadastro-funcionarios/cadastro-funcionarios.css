@@ -1,0 +1,36 @@
+body { 
+    border: 2px solid green;
+    width: 800px;
+    margin-left: 300px;
+    
+}
+
+
+
+input{ 
+    background-color: #D9EAD3;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    
+       
+}
+
+.botoes { 
+    margin: 50px;
+    width: 90px;
+    color: white;
+    background-color: #6AA84F;
+    font-weight: bold;
+}
+
+.select{
+    background-color: #D9EAD3;
+    width: 400px;
+    
+}
+
+h1,h2 { 
+    text-align: center;
+}
+

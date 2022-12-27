@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Registro </h1>
+    <p>Preencha abaixo o seu nome de usuario e senha . Escolha a sua cidade e em seguida os itens que deseja comprar.</p>
+
+    <form action="processa.php" method="post">
+
+        <label for="nome_cliente">Digite o nome de usuario</label>
+        <input type="text" name="nome_cliente" id="nome_cliente"> <br>
+
+        <label for="senha">Digite a sua senha</label>
+        <input type="password" name="senha" id="senha">
+
+        <p>Escolha a sua Cidade:</p>
+
+        <input type="radio" id="jf" name="cidade" value="juiz_de_fora">
+        <label for="jf">Juiz de Fora</label><br>
+
+        <input type="radio" id="sp" name="cidade" value="saopaulo">
+        <label for="P">São Paulo</label><br>
+
+
+        <input type="radio" id="ct" name="cidade" value="cataguases">
+        <label for="ct">Cataguases</label><br>
+
+        <input type="radio" id="salvador" name="cidade" value="Salvador">
+        <label for="sv">Salvador</label><br>
+        
+        <br>
+
+     
+
+        <p>Quais itens deseja comprar?</p>
+
+        <input type="checkbox" id="itens" name="itens" value="carro">
+        <label for="itens">carro</label>
+
+        <input type="checkbox" id="itens" name="itens" value="moto">
+        <label for="itens">moto</label>
+
+        <input type="checkbox" id="itens" name="itens" value="onibus">
+        <label for="itens">onibus</label>
+
+        <input type="checkbox" id="itens" name="itens" value="lambreta">
+        <label for="itens">lambreta</label>
+
+        <input type="checkbox" id="itens" name="itens" value="bicicleta">
+        <label for="itens">bicicleta</label>
+
+
+        <br><br>
+
+
+        <input type="submit" value="Finalizar">
+
+    </form>
+
+</body>
+
+</html>
